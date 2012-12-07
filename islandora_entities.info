@@ -1,0 +1,9 @@
+name = Islandora Entities
+description = Functionality to expose Fedora Commons objects as entities.
+package = Islandora
+version = 7.x-dev
+core = 7.x
+dependencies[] = entity
+dependencies[] = islandora
+files[] = includes/FedoraObjectEntity.inc
+files[] = includes/FedoraObjectEntityController.inc

@@ -1,0 +1,36 @@
+<?php
+
+function islandora_entities_entity_info() {
+  $entity['fedora_object'] = array(
+    'label' => t('Fedora Object'),
+    'module' => 'islandora_entities',
+    'description' => t('Fedora Object'),
+    'entity keys' => array(
+      'id' => 'pid',
+      'label' => 'label',
+    ),
+    'entity class' => 'FedoraObjectEntity',
+    'controller class' => 'FedoraObjectEntityController',
+  );
+
+  return $entity;
+}
+
+function islandora_entities_entity_property_info() {
+  $info['fedora_object']['properties'] = array(
+    'pid' => array(
+      'label' => t('PID'),
+      'type' => 'text',
+    ),
+    'label' => array(
+      'label' => t('Label'),
+      'type' => 'text',
+    ),
+    'creator' => array(
+      'label' => t('Creator'),
+      'type' => 'text',
+    ),
+  );
+
+  return $info;
+}
